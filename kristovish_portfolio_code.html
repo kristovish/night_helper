@@ -38,9 +38,12 @@
     }
 
     .carousel {
-      margin-bottom: 10px;
-      margin-top: 10px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
+
 
     .video-container {
 
@@ -62,7 +65,27 @@
     }
 
     .row img {
-      margin: 0 10px;
+      margin: 0 0px;
+    }
+
+    .card {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: 0.3s;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #F2F2F2;
+      
+    }
+
+
+    .card:hover {
+      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      width: 100%;
     }
   </style>
 </head>
@@ -127,7 +150,7 @@
           looking for a hassle-free listening experience.
         </p>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4 mx-auto">
         <iframe src="https://kristovish.github.io/kristovish-media-player/" width="100%" height="600"
           allowtransparency="true" frameborder="0"></iframe>
       </div>
@@ -160,8 +183,8 @@
     </div>
 
 
-    <div class="col-md-12">
-      <div class="row justify-content-center">
+    <div class="col-md-10 card mx-auto">
+      <div class="row justify-content-center align-items-center">
 
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
@@ -219,7 +242,7 @@
       <div class="col-md-7 text-start">
         <h2 class="featurette-heading">Discord <span class="text-muted">Bots </span></h2>
         <p class="lead text-justify">
-          <br><br>
+
           My Discord bots, including Astral Assistant and Roxanne, have become valuable assets within communities due to
           their advanced functionality and user-friendly design. Night Helper is a chatbot prototype humanoid assistant
           powered by cutting-edge AI technology, designed to help users with their daily and complex tasks. Some of
@@ -243,10 +266,7 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <video id="carousel-video" controls>
-                  <source src="ai_english.mp4" type="video/mp4">
-                  Tu navegador no soporta el video.
-                </video>
+                <img src="bots_NH.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
                 <img src="bots_AA.png" class="d-block w-100" alt="...">
@@ -267,12 +287,6 @@
             </button>
           </div>
 
-          <script>
-            var video = document.getElementById("carousel-video");
-            video.addEventListener('play', function () {
-              $('#carouselExampleIndicators2').carousel('next');
-            });
-          </script>
 
 
 
@@ -289,26 +303,21 @@
     <hr class="featurette-divider">
     <!-- WEBSITES -->
     <div class="row justify-content-center align-items-start">
-      <div class="row">
-        <h2 class="featurette-heading">Some <span class="text-muted">Websites </span></h2>
-        <div class="col-sm-4">
-          <a href="https://www.torresdesantander.com">
-            <img src="images/TORRES DE SANTANDER Logo - Email Signature.png" alt="Torres de Santander"
-              class="img-fluid">
+      <h2 class="featurette-heading">Future <span class="text-muted">Works </span></h2>
+      <div class="row justify-content-center text-center">
+        <div class="col-sm-5 card">
+          <a href="under_construction.html">
+            <img src="images/torres_de_santander/logo-transparent-png.png" alt="Torres de Santander" class="img-fluid">
           </a>
         </div>
-        <div class="col-sm-4">
-          <a href="https://www.bioelementos.com">
-            <img src="images/Bioelementos Logo - Email Signature.png" alt="Bioelementos" class="img-fluid">
-          </a>
-        </div>
-        <div class="col-sm-4">
-          <a href="https://www.tiempoestelar.com">
-            <img src="images/TIEMPO ESTELAR Logo - Email Signature.png" alt="Tiempo Estelar" class="img-fluid">
+        <div class="col-sm-5 card">
+          <a href="under_construction.html">
+            <img src="images/bioelementos/logo-transparent-png.png" alt="Bioelementos" class="img-fluid">
           </a>
         </div>
       </div>
     </div>
+
 
 
 
