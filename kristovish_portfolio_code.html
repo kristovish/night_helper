@@ -91,6 +91,32 @@
     .btn-primary {
       background-color: #191443;
     }
+
+    .btn-primary:hover {
+      background-color: #191443;
+      /* mismo color que el background normal */
+    }
+
+    .buttons-container {
+      padding: 20px;
+    }
+
+    .btn-primary,
+    .btn-primary:active,
+    .btn-primary:focus,
+    .btn-primary:hover {
+      background-color: #191443;
+      border-color: #191443;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      text-align: left;
+    }
   </style>
 </head>
 
@@ -134,157 +160,126 @@
 
     <br>
 
-
     <hr class="featurette-divider">
-    <!-- REPRODUCTOR -->
-    <div class="row justify-content-center align-items-start">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">Kristovish <span class="text-muted">Media Player </span></h2>
-        <p class="lead text-justify">
-          This is a user-friendly web app that allows you to listen to your favorite music with just one click. It's a
-          work in progress, but already offers a variety of popular radio stations from around the world, with no need
-          to search.
-          <br><br>
-          Whether you're into Pop, Rock, Hip-hop, EDM, R&B, Country, Reggaeton, Rap, Latin, or Alternative/Indie, the
-          player has you covered with its 15 hand-picked stations. The simple interface makes it easy to find the
-          perfect station to suit your mood, whether you're looking for relaxing background music or upbeat party music.
-          <br><br>
-          It's important to note that some stations may not be available in certain regions. With its wide range of
-          station options and easy-to-use interface, Kristovish Media Player is the ultimate solution for music lovers
-          looking for a hassle-free listening experience.
-        </p>
-      </div>
-      <div class="col-md-4 mx-auto">
-        <iframe src="https://kristovish.github.io/kristovish-media-player/" width="100%" height="600"
-          allowtransparency="true" frameborder="0"></iframe>
-      </div>
-    </div>
 
 
-    <hr class="featurette-divider">
-    <!-- MOONLIGHT -->
-    <div class="row justify-content-center align-items-start">
-      <div class="row justify-content-center">
-        <div class="col-lg-12">
-          <h2 class="featurette-heading">Moonlight <span class="text-muted">Falls</span></h2>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <nav>
+            <ul class="nav justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#kristovish-media-player">Media Player</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#moonlight">Moonlight Falls</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#bots">Discord Bots</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#AI">AI Prompting</a>
+              </li>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#others">Other Projects</a>
+              </li>
+              </li>
+          </nav>
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+      <!-- REPRODUCTOR -->
+      <div class="row justify-content-center align-items-start">
+        <div class="col-md-7" id="kristovish-media-player">
+          <h2 class="featurette-heading">Kristovish <span class="text-muted">Media Player </span></h2>
           <p class="lead text-justify">
-            Moonlight Falls is an exceptional Minetest server that delivers an unparalleled gaming experience. As both
-            the server's administrator and programmer, I am dedicated to ensuring that everything runs smoothly and
-            seamlessly.
-            <br>
-            <br>
-            Moonlight Falls is an open-source project that is free to play, offering a captivating and magical world
-            brimming with mythical creatures and ethereal biomes. My responsibilities as the server's administrator and
-            programmer go beyond just maintaining its stability; I also create and implement new features to enrich the
-            gaming experience.
-            <br>
-            <br>
-            As a skilled freelance developer, I take pride in my work, and Moonlight Falls is a testament to my
-            commitment to delivering high-quality gaming experiences.
+            This is a user-friendly web app that allows you to listen to your favorite music with just one click. It's a
+            work in progress, but already offers a variety of popular radio stations from around the world, with no need
+            to search.
+            <br><br>
+            Whether you're into Pop, Rock, Hip-hop, EDM, R&B, Country, Reggaeton, Rap, Latin, or Alternative/Indie, the
+            player has you covered with its 15 hand-picked stations. The simple interface makes it easy to find the
+            perfect station to suit your mood, whether you're looking for relaxing background music or upbeat party
+            music.
+            <br><br>
+            It's important to note that some stations may not be available in certain regions. With its wide range of
+            station options and easy-to-use interface, Kristovish Media Player is the ultimate solution for music lovers
+            looking for a hassle-free listening experience.
           </p>
         </div>
-      </div>
-    </div>
-
-
-    <div class="col-md-10 card mx-auto">
-      <div class="row justify-content-center align-items-center">
-
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-              aria-label="Slide 4"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="images/spawn.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/temple.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/newbie.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="images/dragon.png" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <div class="col-md-4 mx-auto">
+          <iframe src="https://kristovish.github.io/kristovish-media-player/" width="100%" height="600"
+            allowtransparency="true" frameborder="0"></iframe>
         </div>
-
-
       </div>
-    </div>
 
-
-    <div class="row justify-content-center">
-      <div class="col-md-12 text-center">
-        <a class="btn btn-primary btn-lg" href="https://www.kristovish.com/play/moonlight" target="_blank"
-          role="button">Discover More!</a>
-      </div>
-    </div>
-
-    <hr class="featurette-divider">
-    <!-- BOTS -->
-
-    <div class="row justify-content-center align-items-start">
-      <div class="col-md-7 text-start">
-        <h2 class="featurette-heading">Discord <span class="text-muted">Bots </span></h2>
-        <p class="lead text-justify">
-
-          My Discord bots, including Astral Assistant and Roxanne, have become valuable assets within communities due to
-          their advanced functionality and user-friendly design. Night Helper is a chatbot prototype humanoid assistant
-          powered by cutting-edge AI technology, designed to help users with their daily and complex tasks. Some of
-          Night Helper's key features include its use of Markov chains for natural-sounding responses and chatbot-like
-          capabilities for automatic replies based on specific topics. Although still in its early stages, Night Helper
-          has shown promising results with its advanced functionality and user-friendly interface. I am excited about
-          its potential to become an even more powerful and versatile assistant in the future and hope to collaborate
-          with others who share my vision and passion for the future of AI technology
-        </p>
-      </div>
-      <div class="col-md-5">
+      <br>
+      <br>
+      <hr class="featurette-divider">
+      <!-- MOONLIGHT -->
+      <div class="row justify-content-center align-items-start">
         <div class="row justify-content-center">
-          <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+          <div class="col-lg-12" id="moonlight">
+            <h2 class="featurette-heading">Moonlight <span class="text-muted">Falls</span></h2>
+            <p class="lead text-justify">
+              Moonlight Falls is an exceptional Minetest server that delivers an unparalleled gaming experience. As both
+              the server's administrator and programmer, I am dedicated to ensuring that everything runs smoothly and
+              seamlessly.
+              <br>
+              <br>
+              Moonlight Falls is an open-source project that is free to play, offering a captivating and magical world
+              brimming with mythical creatures and ethereal biomes. My responsibilities as the server's administrator
+              and
+              programmer go beyond just maintaining its stability; I also create and implement new features to enrich
+              the
+              gaming experience.
+              <br>
+              <br>
+              As a skilled freelance developer, I take pride in my work, and Moonlight Falls is a testament to my
+              commitment to delivering high-quality gaming experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-10 card mx-auto">
+        <div class="row justify-content-center align-items-center">
+
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                 aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="bots_NH.png" class="d-block w-100" alt="...">
+                <img src="images/spawn.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="bots_AA.png" class="d-block w-100" alt="...">
+                <img src="images/temple.png" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item">
-                <img src="bots_Rox.png" class="d-block w-100" alt="...">
+                <img src="images/newbie.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dragon.png" class="d-block w-100" alt="...">
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
               data-bs-slide="next">
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
@@ -292,44 +287,208 @@
           </div>
 
 
-
-
-
-
-        </div>
-
-
-
-      </div>
-    </div>
-
-
-    <hr class="featurette-divider">
-    <!-- WEBSITES -->
-    <div class="row justify-content-center align-items-start">
-      <h2 class="featurette-heading">Future <span class="text-muted">Works </span></h2>
-      <div class="row justify-content-center text-center">
-        <div class="col-sm-5 card">
-          <a href="under_construction.html">
-            <img src="images/torres_de_santander/logo-transparent-png.png" alt="Torres de Santander" class="img-fluid">
-          </a>
-        </div>
-        <div class="col-sm-5 card">
-          <a href="under_construction.html">
-            <img src="images/bioelementos/logo-transparent-png.png" alt="Bioelementos" class="img-fluid">
-          </a>
         </div>
       </div>
+
+
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+          <a class="btn btn-primary btn-lg" href="https://www.kristovish.com/play/moonlight" target="_blank"
+            role="button">Discover More!</a>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <hr class="featurette-divider">
+      <!-- BOTS -->
+
+      <div class="row justify-content-center align-items-start">
+        <div class="col-md-7 text-start" id="bots">
+          <h2 class="featurette-heading">Discord <span class="text-muted">Bots </span></h2>
+          <p class="lead text-justify">
+
+            My Discord bots, including Astral Assistant and Roxanne, have become valuable assets within communities due
+            to
+            their advanced functionality and user-friendly design. Night Helper is a chatbot prototype humanoid
+            assistant
+            powered by cutting-edge AI technology, designed to help users with their daily and complex tasks. Some of
+            Night Helper's key features include its use of Markov chains for natural-sounding responses and chatbot-like
+            capabilities for automatic replies based on specific topics. Although still in its early stages, Night
+            Helper
+            has shown promising results with its advanced functionality and user-friendly interface. I am excited about
+            its potential to become an even more powerful and versatile assistant in the future and hope to collaborate
+            with others who share my vision and passion for the future of AI technology
+          </p>
+        </div>
+        <div class="col-md-5">
+          <div class="row justify-content-center">
+            <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="bots_NH.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="bots_AA.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="bots_Rox.png" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <hr class="featurette-divider">
+      <!-- WEBSITES -->
+      <div class="row justify-content-center align-items-start" id="others">
+        <h2 class="featurette-heading">Future <span class="text-muted">Works </span></h2>
+
+        <br>
+        <br><br>
+        <div class="row justify-content-center text-center">
+          <div class="col-sm-5 card">
+            <a href="under_construction.html">
+              <img src="images/torres_de_santander/logo-transparent-png.png" alt="Torres de Santander"
+                class="img-fluid">
+            </a>
+          </div>
+          <div class="col-sm-5 card">
+            <a href="under_construction.html">
+              <img src="images/bioelementos/logo-transparent-png.png" alt="Bioelementos" class="img-fluid">
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <br><br>
+      <br><br>
+      <br><br>
+      <br>
+      <hr class="featurette-divider">
+      <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+
+          <h2 class="featurette-heading">My Professional<span class="text-muted"> Journey's Showcase </span> <button
+              class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              ﹀
+            </button></h2>
+
+          <div class="collapse" id="collapseExample">
+            <div class="card card-body text-left">
+              <ul class="row justify-content-center align-items-start">
+                <li>• Google IT Support</li>
+                <li>• HTML5 + CSS3: Curso completo de HTML5 y CSS3, de José Ignacio Fernández.</li>
+                <li>• Plantillas (Pugs): Guía de plantillas de Pug, de Anna Weichselbaumer.</li>
+                <li>• Bootstrap: Crea sitios web atractivos con Bootstrap 4, de Raphaël Goetter.</li>
+                <li>• Vue: Crea aplicaciones web con Vue.js 2, de Guillaume Chau.</li>
+                <li>• JavaScript: Guía completa de JavaScript, de Kyle Simpson.</li>
+                <li>• Node.js: Aprende Node.js desde cero, de Fernando Herrera.</li>
+                <li>• Frameworks de JavaScript: Angular: Desarrolla aplicaciones web con Angular, de Maximiliano
+                  Firtman.</li>
+                <li>• Express.js: Crea aplicaciones web con Express.js, de Azat Mardan.</li>
+                <li>• Framework de juegos: Phaser: Crea juegos con Phaser, de Photon Storm.</li>
+                <li>• Biblioteca de JavaScript: React: Crea aplicaciones web con React, de Alexandre Levache. </li>
+                <li>• EaselJS: Crea animaciones en canvas con EaselJS, de Grant Skinner.</li>
+                <li>• Pruebas: Chai: Realiza pruebas automatizadas con Chai, de Jake Luer. </li>
+                <li>• Mocha: Realiza pruebas automatizadas con Mocha, de TJ Holowaychuk.</li>
+                <li>• Lenguaje: Python: Guía completa de Python, de Mark Lutz.</li>
+                <li>• Frameworks web de Python: Django: Crea aplicaciones web con Django, de Adrian Holovaty. </li>
+                <li>• Pyramid: Crea aplicaciones web con Pyramid, de Chris McDonough.</li>
+                <li>• Framework de juegos de Python: Cocos2d: Crea juegos con Cocos2d, de Ricardo Quesada.</li>
+                <li>• Biblioteca de Python: Pygame: Crea juegos con Pygame, de Pete Shinners. </li>
+                <li>• Panda3D: Crea juegos y aplicaciones en 3D con Panda3D, de Disney/Panda3D Team.</li>
+                <li>• Pruebas de Python: Pytest: Realiza pruebas automatizadas con Pytest, de Brian Okken.</li>
+                <li>• Lenguaje: Lua: Aprende Lua desde cero, de Roberto Ierusalimschy.</li>
+                <li>• Framework de juegos de Lua: Love2D: Crea juegos con Love2D, de kenney.nl.</li>
+                <li>• Lenguaje: Java: Guía completa de Java, de Herbert Schildt.</li>
+                <li>• Framework de Java: Spring Framework: Crea aplicaciones web con Spring Framework, de Craig Walls.
+                </li>
+                <li>• Framework de juegos de Java: libGDX: Crea juegos multiplataforma con libGDX, de Mario Zechner.
+                </li>
+                <li>• Biblioteca de Java: LWJGL (Lightweight Java Game Library): Crea juegos con LWJGL, de Brian Matzon.
+                </li>
+                <li>• Lenguaje: PHP: Guía completa de PHP, de Kevin Yank.</li>
+                <li>• Framework de PHP: Laravel: Crea aplicaciones web con Laravel, de Taylor Otwell.</li>
+                <li>• Lenguaje: SQL: Guía completa de SQL, de Alisson Becker.</li>
+                <li>• Sistema de gestión de bases de datos: MySQL: Aprende MySQL desde cero, de Paul Dubois.</li>
+                <li>• Lenguaje: C/C++: Guía completa de C/C++, de Bjarne Stroustrup.</li>
+                <li>• Biblioteca de C/C++: Allegro: Crea juegos con Allegro, de Shawn Hargreaves.</li>
+                <li>• Gosu: Crea juegos con Gosu, de Julian Raschke.</li>
+                <li>• SDL (Simple DirectMedia Layer): Crea juegos y aplicaciones multimedia con SDL, de Sam Lantinga.
+                </li>
+                <li>• Lenguaje: Go (Goolang): Guía completa de Go, de Alan A. A. Donovan.</li>
+                <li>• Frameworks de Go: Echo: Crea aplicaciones web con Echo, de Echo Team.</li>
+                <li>• Beego: Crea aplicaciones web con Beego, de AstaXie.</li>
+                <li>• Iris: Crea aplicaciones web con Iris, de Gerasimos Maropoulos.</li>
+                <li>• Revel: Crea aplicaciones web con Revel, de Rob Figueiredo.</li>
+                <li>• Lenguaje: Ruby: Guía completa de Ruby, de David Flanagan - Yukihiro Matsumoto</li>
+                <li>• Framework de Ruby: Rails: Crea aplicaciones web con Rails, de David Heinemeier Hansson.</li>
+                <li>• Ethereum/Smart Contracts: Desarrollo de contratos inteligentes con Solidity, de Chris Dannen.</li>
+                <li>• QA/Testing: Mocha: Realiza pruebas automatizadas con Mocha, de TJ Holowaychuk.</li>
+                <li>• Chai: Realiza pruebas automatizadas con Chai, de Jake Luer. </li>
+                <li>• JIRA: Gestión de proyectos de QA con JIRA, de Atlassian.</li>
+                <li>• Idiomas: Español/Inglés: Aprende inglés con Español, de Ana Sánchez.</li>
+                <li>• IA/ML/XR: Aprende Inteligencia Artificial, Machine Learning y Realidad Extendida, de Andrew Ng.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+
+
+      <div class="row justify-content-center buttons-container">
+        <div class="col-md-10 text-center">
+          <a class="btn btn-primary" href="#about-me">About Me</a>
+          <a class="btn btn-primary mr-3" href="#contact">Contact</a>
+        </div>
+      </div>
+
+
+
+
+
+
+
     </div>
-
-
-
-
-
-
-
-
-  </div>
   </div>
 
 
