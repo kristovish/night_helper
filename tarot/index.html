@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tarot</title>
+
+
+  <style>
+    body {
+      background-color: #F2F2F2;
+      font-family: Arial, sans-serif;
+      color: #333333;
+    }
+
+    .card {
+      background-color: #FFFFFF;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #332244;
+      margin-bottom: 20px;
+    }
+
+    .card-text {
+      font-size: 16px;
+      line-height: 1.5;
+      color: #555555;
+      font-style: italic;
+      margin-bottom: 20px;
+    }
+
+    button {
+      background-color: #332244;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 4px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    button:hover {
+      background-color: #593A63;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th,
+    td {
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #E0E0E0;
+    }
+
+    th {
+      background-color: #332244;
+      color: #FFFFFF;
+    }
+
+    #tablaCartas {
+      margin-top: 20px;
+    }
+
+    td {
+      width: 33.33%;
+      height: 38.5px;
+    }
+
+    body.tema-claro {
+      background-color: #F2F2F2;
+      color: #333333;
+    }
+
+    body.tema-oscuro {
+      background-color: #333333;
+      color: #FFFFFF;
+    }
+
+    body.tema-oscuro .card {
+      background-color: #1E1E1E;
+      box-shadow: 0px 2px 4px rgba(255, 255, 255, 0.1);
+    }
+
+    body.tema-oscuro .card-title {
+      color: #FFFFFF;
+    }
+
+    body.tema-oscuro .card-text {
+      color: #CCCCCC;
+    }
+
+    body.tema-oscuro button {
+      background-color: #593A63;
+      color: #FFFFFF;
+    }
+
+    body.tema-oscuro th {
+      background-color: #593A63;
+    }
+  </style>
+  <script src="tarot.js"></script>
+</head>
+
+<body>
+  <div class="card">
+    <h1 class="card-title">The Magic Oracle</h1>
+    <p class="card-text">
+      This is a tarot tool that shows three random cards from your preferred deck each time you press the dice button,
+      following the classic three-card spread. The draws are random and will not repeat unless you refresh the page.
+      It's important to note that this tool doesn't provide predictions, but it's simply a way to randomly select
+      cards to be interpreted by each tarot reader or enthusiast.</p>
+  </div>
+
+  <div class="card">
+    <nav class="navbar position-fixed" style="text-align: center;">
+      <button onclick="lanzarCartas()">🎲</button>
+      <button id="cambioEstilo" onclick="cambiarEstilo()">🌓</button>
+      <button onclick="location.reload()">🔄</button>
+    </nav>
+    <div id="tablaCartas"></div>
+  </div>
+  
+
+
+
+  <script>
+    function lanzarCartas() {
+      let spread = generateTarotSpread(3, false);
+      let tablaNueva = document.createElement("div");
+      tablaNueva.innerHTML = spread;
+      document.getElementById("tablaCartas").appendChild(tablaNueva);
+    }
+  </script>
+</body>
+
+</html>
